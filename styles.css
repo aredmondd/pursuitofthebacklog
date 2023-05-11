@@ -45,6 +45,6 @@ span {
 span > a {
     text-decoration: none;
     color: var(--blue);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
 }
