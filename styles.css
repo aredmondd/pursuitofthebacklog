@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--black);
+    color: var(--white);
     font-family: "Inter", sans-serif;
 }
 
@@ -49,20 +50,38 @@ li > a.active {
     font-size: 18px;
 }
 
-/*INTRO TEXT*/
-p {
-    color: var(--white);
-    font-size: 35px;
-    margin: 0.5rem 0;
-}
 
+
+/*INTRO TEXT*/
 .intro {
     display: flex;
     flex-direction: column;
     margin: 3rem 14rem;
+    margin-bottom: 7rem;
+}
+
+.intro > p {
+    font-size: 35px;
+    margin: 0.4rem 0;
 }
 
 .things {
     color: var(--red);
+    font-weight: bold;
+}
+
+
+
+/*STATS TEXT*/
+.quick-stats {
+    font-size: 25px;
+    margin: 0 14rem;
+}
+
+.quick-stats > p{
+    margin: 0.25rem;
+}
+.blueBold {
+    color: var(--blue);
     font-weight: bold;
 }
