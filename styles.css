@@ -115,3 +115,12 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
     color: var(--blue);
     font-size: 27px;
 }
+
+.bigPic {
+    position: absolute;
+    width: 350px;
+    height: 525px;
+    top: 110px;
+    left: 900px;
+    margin-right: 3rem;
+}
