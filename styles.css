@@ -12,6 +12,8 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+
+
 /*NAVBAR STUFF*/
 .navbar {
     list-style-type: none;
@@ -85,4 +87,31 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
 .blueBold { /*MAKE BLUE TEXT LOOK BLUE & BOLD*/
     color: var(--blue);
     font-weight: bold;
+}
+
+
+
+/*ABOUT PAGE*/
+.whoAmI {
+    padding: 3rem 5rem;
+}
+.whoAmI h1 {
+    color: var(--red);
+    font-size: 27px;
+}
+
+.whoAmI p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.125rem;
+    font-size: 20px;
+}
+
+.links {
+    padding: 3rem 5rem;
+}
+
+.links h1 {
+    color: var(--blue);
+    font-size: 27px;
 }
