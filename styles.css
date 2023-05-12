@@ -55,22 +55,54 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
 
 
 /*INTRO TEXT*/
-.intro { /*BLOCK STYLING*/
+.wrapper {
     display: flex;
-    flex-direction: column;
-    margin: 3rem 14rem;
+    justify-content: center;
+    align-items: center;
+}
+.container { /*BLOCK STYLING*/
+    display: grid;
+    grid-template-columns: auto 300px auto 133px;
+    grid-template-rows: repeat(3,auto);
+    margin-top: 3rem;
     margin-bottom: 7rem;
 }
 
-.intro > p { /*ITEM SYLING*/
+.container > p { /*ITEM SYLING*/
     font-size: 35px;
-    margin: 0.4rem 0;
+    margin: 0;
 }
 
 .things { /*THINGS TEXT*/
     color: var(--red);
     font-weight: bold;
 }
+
+.things:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.line1 { /*PUT LINE 1 IN 0,0*/
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.line2 { /*PUT LINE 2 IN 1,0*/
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.line3 { /*PUT LINE 3 IN 2,0*/
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.profilePic { /*PUT THE PROFILE PIC IN THE 3RD COL*/
+    grid-column: 3;
+    grid-row: 1 / span3;
+}
+
 
 
 
