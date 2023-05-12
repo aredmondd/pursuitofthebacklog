@@ -20,11 +20,11 @@ body {
     overflow: hidden;
 }
 
-.navbar > li {
+.navbar > li { /*RIGHT ALIGN NAVBAR ELEMENTS*/
     float: right;
 }
 
-li > a {
+li > a { /*DESIGN OF NAVBAR ELEMENTS*/
     display: block;
     text-decoration: none;
     text-align: center;
@@ -33,17 +33,17 @@ li > a {
     color: var(--white);
 }
 
-li > a.active {
+li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
     color: var(--red);
 }
 
-.header {
+.header { /*POSITIONING OF THE POTB*/
     margin: 0;
     position: absolute;
     padding: 14px 16px;
 }
 
-.header > a {
+.header > a { /*STYLES OF THE POTB*/
     text-decoration: none;
     color: var(--blue);
     font-weight: 700;
@@ -53,19 +53,19 @@ li > a.active {
 
 
 /*INTRO TEXT*/
-.intro {
+.intro { /*BLOCK STYLING*/
     display: flex;
     flex-direction: column;
     margin: 3rem 14rem;
     margin-bottom: 7rem;
 }
 
-.intro > p {
+.intro > p { /*ITEM SYLING*/
     font-size: 35px;
     margin: 0.4rem 0;
 }
 
-.things {
+.things { /*THINGS TEXT*/
     color: var(--red);
     font-weight: bold;
 }
@@ -73,15 +73,16 @@ li > a.active {
 
 
 /*STATS TEXT*/
-.quick-stats {
+.quick-stats { /*SIZE & LOCATION*/
     font-size: 25px;
     margin: 0 14rem;
 }
 
-.quick-stats > p{
+.quick-stats > p{ /*FIX MARGINS FOR INBETWEEN LINES*/
     margin: 0.25rem;
 }
-.blueBold {
+
+.blueBold { /*MAKE BLUE TEXT LOOK BLUE & BOLD*/
     color: var(--blue);
     font-weight: bold;
 }
