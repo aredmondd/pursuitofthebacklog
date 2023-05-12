@@ -36,15 +36,33 @@ li > a.active {
     color: var(--red);
 }
 
-span {
+.header {
     margin: 0;
     position: absolute;
     padding: 14px 16px;
 }
 
-span > a {
+.header > a {
     text-decoration: none;
     color: var(--blue);
     font-weight: 700;
     font-size: 18px;
+}
+
+/*INTRO TEXT*/
+p {
+    color: var(--white);
+    font-size: 35px;
+    margin: 0.5rem 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 14rem;
+}
+
+.things {
+    color: var(--red);
+    font-weight: bold;
 }
