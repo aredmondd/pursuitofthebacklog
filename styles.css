@@ -136,10 +136,22 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
 }
 
 .links {
-    padding: 3rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px 75px;
 }
 
-.links h1 {
+.linkWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--blue);
     font-size: 27px;
 }
@@ -159,4 +171,18 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
     right: 5px;
     width: 50px;
     height: 50px;
+}
+
+
+/*ANIMATION TESTING*/
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: insert 0 0 0 0 var(--red);
+    color: var(--white);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.links a:hover {
+    box-shadow: inset 132px 0 0 0 var(--red);
 }
