@@ -13,7 +13,7 @@ async function fetchTotalHours() {
         const response = await fetch(url);
         const data = await response.json();
         let days = data["data"]["anime"]["days_watched"];
-        animeHours.innerHTML = Math.round(days) * 24
+        animeHours.innerHTML = Math.round(days * 24);
         return data;
     } catch(error) {
         console.log(error);
