@@ -1,0 +1,71 @@
+/*COLOR VARAIBLES*/
+:root {
+    --red: #FF5A5F;
+    --blue: #5C9DFF;
+    --black: #2A2A2A;
+    --white: #F5F5F5;
+}
+
+/*INTRO TEXT*/
+.center {
+    margin: 0rem 13rem;
+}
+.container { /*BLOCK STYLING*/
+    display: grid;
+    grid-template-columns: auto 300px auto 133px;
+    grid-template-rows: repeat(3,auto);
+    margin: 3rem 0 7rem 0;
+}
+
+.container > p { /*ITEM SYLING*/
+    font-size: 35px;
+    margin: 0;
+}
+
+.things { /*THINGS TEXT*/
+    color: var(--red);
+    font-weight: bold;
+}
+
+.line1 { /*PUT LINE 1 IN 1,1*/
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.line2 { /*PUT LINE 2 IN 2,1*/
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.line3 { /*PUT LINE 3 IN 3,1*/
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.profilePic { /*PUT THE PROFILE PIC IN THE 3RD COL*/
+    grid-column: 3;
+    grid-row: span 3;
+}
+
+
+.quick-stats { /*SIZE & LOCATION*/
+    font-size: 25px;
+    margin: 0 13rem;
+}
+
+.quick-stats > p{ /*FIX MARGINS FOR INBETWEEN LINES*/
+    margin: 0.25rem;
+}
+
+.blueBold { /*MAKE BLUE TEXT LOOK BLUE & BOLD*/
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.modePhoto { /*MODE PHOTO SIZING AND PLACEMENT*/
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+}
