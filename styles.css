@@ -121,7 +121,7 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
 
 /*ABOUT PAGE*/
 .whoAmI {
-    padding: 3rem 5rem;
+    margin: 2rem 5rem;
 }
 .whoAmI h1 {
     color: var(--red);
@@ -154,6 +154,7 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
     align-items: center;
     color: var(--blue);
     font-size: 27px;
+    margin-top: 3rem;
 }
 
 .bigPic {
