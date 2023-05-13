@@ -220,3 +220,67 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
 .links a:hover {
     box-shadow: inset 132px 0 0 0 var(--red);
 }
+
+
+.manWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 5rem;
+}
+
+.man {
+    display: grid;
+    grid-template-columns: auto 700px;
+    gap: 100px;
+}
+
+.manPhoto {
+    height: 345px;
+    width: auto;
+}
+
+.man p {
+    color: var(--white);
+    font-size: 24px;
+    margin: 0;
+}
+
+.man span {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+
+
+.linkWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resourcesNBacklog {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 0.25rem 35rem;
+}
+
+.resourcesNBacklog p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.title {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.YBlinks {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.rightAlign {
+    justify-self: end;
+}
