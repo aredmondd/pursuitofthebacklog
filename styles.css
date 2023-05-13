@@ -120,12 +120,46 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
 
 
 /*ABOUT PAGE*/
+.aboutWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .whoAmI {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 5rem;
     margin: 2rem 5rem;
 }
 .whoAmI h1 {
     color: var(--red);
     font-size: 27px;
+}
+
+.whoAmI br {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.pList {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.aboutH1 {
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.aidenRedmond {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    width: auto;
+    height: 450px;
 }
 
 .whoAmI p {
