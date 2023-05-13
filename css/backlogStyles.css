@@ -1,0 +1,70 @@
+/*COLOR VARAIBLES*/
+:root {
+    --red: #FF5A5F;
+    --blue: #5C9DFF;
+    --black: #2A2A2A;
+    --white: #F5F5F5;
+}
+
+.manWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 5rem;
+}
+
+.man {
+    display: grid;
+    grid-template-columns: auto 700px;
+    gap: 100px;
+}
+
+.manPhoto {
+    height: 353px;
+    width: auto;
+}
+
+.man p {
+    color: var(--white);
+    font-size: 24px;
+    margin: 0;
+}
+
+.man span {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+
+
+.linkWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resourcesNBacklog {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 0.25rem 35rem;
+}
+
+.resourcesNBacklog p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.title {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.YBlinks {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.rightAlign {
+    justify-self: end;
+}

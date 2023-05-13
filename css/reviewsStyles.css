@@ -1,0 +1,43 @@
+/*COLOR VARAIBLES*/
+:root {
+    --red: #FF5A5F;
+    --blue: #5C9DFF;
+    --black: #2A2A2A;
+    --white: #F5F5F5;
+}
+
+/*REVIEWS PAGE*/
+.reviewIntro {
+    display: flex;
+    font-size: 25px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center
+}
+
+.reviewsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 850px;
+}
+
+.cardHeader {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0.5rem 0.5rem 0.25rem;
+}
+
+.cardSubtitle {
+    margin: 0;
+    padding: 0.25rem 0.5rem 0.5rem;
+    color: var(--black);
+    font-size: 15px;
+}
