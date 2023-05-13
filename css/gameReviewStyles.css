@@ -1,0 +1,11 @@
+/*COLOR VARAIBLES*/
+:root {
+    --red: #FF5A5F;
+    --blue: #5C9DFF;
+    --black: #2A2A2A;
+    --white: #F5F5F5;
+}
+
+.back {
+    color: var(--white);
+}
