@@ -28,6 +28,11 @@
     margin: 0.5rem 0 0.5rem 0;
 }
 
+.review:after  {
+    content: "";
+    background-color: var(--blue);
+}
+
 .cardHeader {
     color: var(--red);
     font-weight: bold;
