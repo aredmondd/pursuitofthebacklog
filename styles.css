@@ -126,7 +126,6 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICK ON*/
     align-items: center;
 }
 
-
 .whoAmI {
     display: grid;
     grid-template-columns: repeat(2, auto);
