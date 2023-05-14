@@ -22,15 +22,12 @@
 }
 
 .review {
-    background-color: var(--textColor);
+    background-color: #F5F5F5;
     border-radius: 10px;
+    border: 3px solid #2A2A2A;
     width: 850px;
     margin: 0.5rem 0 0.5rem 0;
-}
-
-.review:after  {
-    content: "";
-    background-color: var(--blue);
+    color: var(--textColor);
 }
 
 .cardHeader {
@@ -44,6 +41,6 @@
 .cardSubtitle {
     margin: 0;
     padding: 0.25rem 0.5rem 0.5rem;
-    color: var(--bgColor);
+    color: #2A2A2A;
     font-size: 15px;
 }
