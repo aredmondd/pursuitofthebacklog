@@ -8,6 +8,18 @@ const BLACK = "2A2A2A";
 const WHITE = "F5F5F5";
 
 let animeHours = document.querySelector("#animeHours");
+const MODE = document.querySelector(".modePhoto");
+let iconHREF = MODE.getAttribute("src");
+
+MODE.addEventListener("click", function() {
+    document.body.classList.toggle("light-theme");
+    if (document.body.classList.contains("light-theme")) {
+        MODE.src = "../../images/DARK.png";
+    }
+    else {
+        MODE.src = "../../images/LIGHT.png";
+    }
+})
 
 async function fetchTotalHours() {
     const url = "https://api.jikan.moe/v4/users/mrredmond/statistics";

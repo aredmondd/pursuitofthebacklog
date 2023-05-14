@@ -2,8 +2,8 @@
 :root {
     --red: #FF5A5F;
     --blue: #5C9DFF;
-    --black: #2A2A2A;
-    --white: #F5F5F5;
+    --bgColor: #2A2A2A;
+    --textColor: #F5F5F5;
 }
 
 .reviewIntro {
@@ -22,7 +22,7 @@
 }
 
 .review {
-    background-color: var(--white);
+    background-color: var(--textColor);
     border-radius: 10px;
     width: 850px;
     margin: 0.5rem 0 0.5rem 0;
@@ -44,6 +44,6 @@
 .cardSubtitle {
     margin: 0;
     padding: 0.25rem 0.5rem 0.5rem;
-    color: var(--black);
+    color: var(--bgColor);
     font-size: 15px;
 }

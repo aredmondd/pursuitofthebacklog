@@ -2,8 +2,8 @@
 :root {
     --red: #FF5A5F;
     --blue: #5C9DFF;
-    --black: #2A2A2A;
-    --white: #F5F5F5;
+    --bgColor: #2A2A2A;
+    --textColor: #F5F5F5;
 }
 
 * {
@@ -13,8 +13,8 @@
 }
 
 body {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--bgColor);
+    color: var(--textColor);
     font-family: "Inter", sans-serif;
 }
 
@@ -24,15 +24,15 @@ body {
     font-size: 18px;
 }
 
-.navbar > li { /*RIGHT ALIGN NAVBAR ELEMENTS*/
+.navbar > li{ /*RIGHT ALIGN NAVBAR ELEMENTS*/
     float: right;
 }
 
-li > a { /*DESIGN OF NAVBAR ELEMENTS*/
+li > a , img{ /*DESIGN OF NAVBAR ELEMENTS*/
     display: block;
     text-align: center;
     padding: 14px 16px;
-    color: var(--white)
+    color: var(--textColor)
 }
 
 li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICKED ON*/
@@ -47,4 +47,16 @@ li > a.active { /*SET NAVBAR ELEMENT TO RED WHEN CLICKED ON*/
 .logo > a { /*STYLES OF THE POTB*/
     color: var(--blue);
     font-weight: 700;
+}
+
+.modePhoto { /*MODE PHOTO SIZING AND PLACEMENT*/
+    float: right;
+    width: 30px;
+    height: 30px;
+    padding: 10px 16px 10px 10px;
+}
+
+body.light-theme{
+    --bgColor: #F5F5F5;
+    --textColor: #2A2A2A;
 }
