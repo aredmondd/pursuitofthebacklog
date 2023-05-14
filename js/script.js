@@ -20,3 +20,26 @@ async function fetchTotalHours() {
     }
 }
 
+function darkMode() {
+    let body = document.body
+    let bodyColor = window.getComputedStyle(body).backgroundColor;
+
+    if (bodyColor.includes(42)) {
+        return true;
+    }
+    return false;
+}
+
+function modeChange() {
+    if (darkMode()) {
+        console.log("black to white");
+        //turn the background white
+        //turn all the white text black
+    }
+    else {
+        console.log("white to black");
+        //turn the background black
+        //turn all the black text white
+    }
+}
+
