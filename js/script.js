@@ -14,10 +14,10 @@ let iconHREF = MODE.getAttribute("src");
 MODE.addEventListener("click", function() {
     document.body.classList.toggle("light-theme");
     if (document.body.classList.contains("light-theme")) {
-        MODE.src = "../../images/DARK.png";
+        MODE.src = "../images/DARK.png";
     }
     else {
-        MODE.src = "../../images/LIGHT.png";
+        MODE.src = "../images/LIGHT.png";
     }
 })
 
