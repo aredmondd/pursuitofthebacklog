@@ -10,7 +10,7 @@ this is a little project i whipped up after a fever dream about all my stuff in 
 - suggestions box powered by formsubmit API
 - constantly updated anime hour count via jikan API
 - a full record of all my codebase via git & github
-- a really great color pallete straight from [coolors.co](www.coolors.co)
+- a really great color pallete straight from [coolors.co](https://www.coolors.co)
 - a beautifully designed ui/ux from yours truly and figma
 
 ---
@@ -26,9 +26,9 @@ here's some things i struggled with over the course of this project. i learned i
 
 ### some thanks
 - amy redmond
-- [css-tricks](www.css-tricks.com)
-- [w3schools](www.w3schools.com)
-- [stackOverflow](www.stackoverflow.com)
+- [css-tricks](https://www.css-tricks.com)
+- [w3schools](https://www.w3schools.com)
+- [stackOverflow](https://www.stackoverflow.com)
 - my 2nd monitor
 
 if you made it all the way down here thank you so much for reading my README! the next project is on the way.
