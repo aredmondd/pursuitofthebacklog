@@ -6,12 +6,6 @@
     --textColor: #F5F5F5;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /*INTRO SECTION*/
 .whoAmI {
     display: grid;

@@ -18,6 +18,12 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     list-style-type: none;
     overflow: hidden;

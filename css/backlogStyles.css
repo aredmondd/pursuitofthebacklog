@@ -6,10 +6,8 @@
     --textColor: #F5F5F5;
 }
 
-.manWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*MAN INTRO*/
+.manContainer {
     margin: 3rem 5rem;
 }
 
@@ -22,13 +20,11 @@
 .manPhoto {
     padding: 0;
     height: 353px;
-    width: auto;
 }
 
 .man p {
     color: var(--textColor);
     font-size: 24px;
-    margin: 0;
 }
 
 .man span {
@@ -36,10 +32,12 @@
     font-weight: bold;
 }
 
-.linkWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+/*LINKS*/
+.title {
+    font-weight: bold;
+    color: var(--blue);
 }
 
 .resourcesNBacklog {
@@ -54,11 +52,6 @@
     font-size: 20px;
 }
 
-.title {
-    font-weight: bold;
-    color: var(--blue);
-}
-
 .YBlinks {
     text-decoration: underline;
     color: var(--white);
@@ -68,6 +61,9 @@
     justify-self: end;
 }
 
+
+
+/*FORM*/
 .submit {
     background-color: var(--blue);
     padding: 5px 5px;
@@ -79,12 +75,6 @@
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .reccGrid {
@@ -100,17 +90,16 @@
     font-weight: bold;
 }
 
-input {
-    margin: 5px 5px;
-}
-
 form {
     display: grid;
     grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(2,auto);
 }
 
-/*GRID FORMATTING*/
+input {
+    margin: 5px 5px;
+}
+
 .general {
     grid-column: span 2;
 }
