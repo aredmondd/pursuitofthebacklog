@@ -39,10 +39,3 @@ MODE.addEventListener("click", function () {
   localStorage.setItem("theme", theme);
 });
 
-//FORM SUBMISSION ALERT 
-const submitBtn = document.querySelector("#submitBtn");
-
-submitBtn.addEventListener( () => {
-    alert(`Thank you for the submission!`);
-})
-
