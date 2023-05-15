@@ -6,13 +6,13 @@
     --textColor: #F5F5F5;
 }
 
-/*ABOUT PAGE*/
-.aboutWrapper {
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*INTRO SECTION*/
 .whoAmI {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -26,30 +26,6 @@
     font-size: 27px;
 }
 
-.whoAmI br {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.pList {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.aboutH1 {
-    margin: 0;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.aidenRedmond {
-    grid-column: 2;
-    grid-row: 1 / 4;
-    width: auto;
-    height: 450px;
-    max-height: 100%;
-}
-
 .whoAmI p {
     margin: 0;
     padding: 0;
@@ -57,6 +33,14 @@
     font-size: 20px;
 }
 
+img {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    height: 450px;
+}
+
+
+/*LINKS*/
 .links {
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -64,36 +48,21 @@
     gap: 5px 75px;
 }
 
-.linkWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .linksHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--blue);
     font-size: 27px;
-    margin-top: 3rem;
 }
 
-.bigPic {
-    position: absolute;
-    width: 350px;
-    height: 525px;
-    top: 110px;
-    left: 900px;
-    margin-right: 3rem;
+.linkContainer {
+    margin-top: 2rem;
 }
 
-/*ANIMATION TESTING*/
+/*LINK HOVER ANIMATION*/
 .links a {
     text-decoration: none;
     font-size: 20px;
     box-shadow: insert 0 0 0 0 var(--red);
-    color: var(--white);
+    color: var(--textColor);
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
