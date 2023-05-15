@@ -72,7 +72,7 @@
 }
 
 .textInput {
-    border: none;
+    border: 1.5px solid var(--textColor);
     border-radius: 5px;
     padding: 5px 10px;
 }

@@ -2,25 +2,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     fetchTotalHours();
 });
 
-const RED = "FF5A5F";
-const BLUE = "5C9DFF";
-const BLACK = "2A2A2A";
-const WHITE = "F5F5F5";
-
 let animeHours = document.querySelector("#animeHours");
-const MODE = document.querySelector(".modePhoto");
-let iconHREF = MODE.getAttribute("src");
-
-MODE.addEventListener("click", function() {
-    document.body.classList.toggle("light-theme");
-    if (document.body.classList.contains("light-theme")) {
-        MODE.src = "../images/DARK.png";
-    }
-    else {
-        MODE.src = "../images/LIGHT.png";
-    }
-})
-
 async function fetchTotalHours() {
     const url = "https://api.jikan.moe/v4/users/mrredmond/statistics";
     try {
@@ -33,4 +15,27 @@ async function fetchTotalHours() {
         console.log(error);
     }
 }
+
+//DARK MODE LOCAL STORAGE STUFF
+const currentTheme = localStorage.getItem("theme")
+const MODE = document.querySelector(".modePhoto");
+
+if (currentTheme == "light") {
+  document.body.classList.add("light-theme");
+  MODE.src = "../images/DARK.png";
+}
+
+MODE.addEventListener("click", function () {
+    document.body.classList.toggle("light-theme");
+
+    let theme = "dark";
+    if (document.body.classList.contains("light-theme")) {
+        MODE.src = "../images/DARK.png";
+        theme = "light";
+    }
+    else {
+        MODE.src = "../images/LIGHT.png";
+    }   
+  localStorage.setItem("theme", theme);
+});
 
