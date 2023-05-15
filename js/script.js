@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
     fetchTotalHours();
 });
 
@@ -38,4 +38,13 @@ MODE.addEventListener("click", function () {
     }   
   localStorage.setItem("theme", theme);
 });
+
+//FORM SUBMISSION ALERT 
+const submitBtn = document.querySelector("#submitBtn");
+let name = document.querySelector("#nameInput").value;
+console.log(name);
+
+submitBtn.addEventListener( () => {
+    alert(`Thank you, ${name} for the submission!`);
+})
 
