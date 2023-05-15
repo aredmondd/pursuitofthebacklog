@@ -7,8 +7,8 @@ this is a little project i whipped up after a fever dream about all my stuff in 
 
 ### some features i think are cool
 - dark/light mode supported with local state storage
-- suggestions box powered by formsubmit API
-- constantly updated anime hour count via jikan API
+- suggestions box powered by [formsubmit API](https://www.formsubmit.co)
+- constantly updated anime hour count via [jikan API](https://www.jikan.moe)
 - a full record of all my codebase via git & github
 - a really great color pallete straight from [coolors.co](https://www.coolors.co)
 - a beautifully designed ui/ux from yours truly and figma
