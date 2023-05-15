@@ -6,7 +6,7 @@
     --textColor: #F5F5F5;
 }
 
-/*INTRO TEXT*/
+/*INTRO STUFF*/
 .center {
     margin: 0rem 13rem;
 }
@@ -47,6 +47,8 @@
     grid-row: span 3;
 }
 
+
+/*STATS STUFF*/
 
 .quick-stats { /*SIZE & LOCATION*/
     font-size: 25px;
