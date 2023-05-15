@@ -41,10 +41,8 @@ MODE.addEventListener("click", function () {
 
 //FORM SUBMISSION ALERT 
 const submitBtn = document.querySelector("#submitBtn");
-let name = document.querySelector("#nameInput").value;
-console.log(name);
 
 submitBtn.addEventListener( () => {
-    alert(`Thank you, ${name} for the submission!`);
+    alert(`Thank you for the submission!`);
 })
 
