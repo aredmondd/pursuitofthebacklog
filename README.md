@@ -24,6 +24,14 @@ here's some things i struggled with over the course of this project. i learned i
 
 ---
 
+### some things i learned for this project
+- git & github 
+- local state storage
+- figma
+- 60-30-10 rule of color theory
+
+---
+
 ### some thanks
 - amy redmond
 - [css-tricks](https://www.css-tricks.com)
