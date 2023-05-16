@@ -39,3 +39,6 @@ MODE.addEventListener("click", function () {
   localStorage.setItem("theme", theme);
 });
 
+console.log(location.href);
+console.log(location.hostname);
+
