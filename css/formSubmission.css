@@ -10,8 +10,13 @@ h1 {
     font-size: 30px;
 }
 
-h2 {
-    font-size: 25px;
+p {
+    font-size: 20px;
+}
+
+.links {
+    margin: 0rem 5px;
+    font-weight: bold;
 }
 
 .backlogLink {
