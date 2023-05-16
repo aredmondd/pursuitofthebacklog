@@ -1,0 +1,23 @@
+/*COLOR VARAIBLES*/
+:root {
+    --red: #FF5A5F;
+    --blue: #5C9DFF;
+    --bgColor: #2A2A2A;
+    --textColor: #F5F5F5;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.backlogLink {
+    color: var(--red);
+}
+
+.repoLink {
+    color: var(--blue);
+}
