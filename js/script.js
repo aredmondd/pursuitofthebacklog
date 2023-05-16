@@ -39,3 +39,7 @@ MODE.addEventListener("click", function () {
     }   
   localStorage.setItem("theme", theme);
 });
+
+function submit() {
+    alert("Thank you for your submission!");
+}
