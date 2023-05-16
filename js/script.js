@@ -19,10 +19,11 @@ async function fetchTotalHours() {
 //DARK MODE LOCAL STORAGE STUFF
 const currentTheme = localStorage.getItem("theme")
 const MODE = document.querySelector(".modePhoto");
+const ROOTHREF = "https://aredmondd.github.io/pursuitofthebacklog/";
 
 if (currentTheme == "light") {
   document.body.classList.add("light-theme");
-  MODE.src = "../images/DARK.png";
+  MODE.src = ROOTHREF + "images/DARK.png";
 }
 
 MODE.addEventListener("click", function () {
@@ -30,11 +31,11 @@ MODE.addEventListener("click", function () {
 
     let theme = "dark";
     if (document.body.classList.contains("light-theme")) {
-        MODE.src = "../images/DARK.png";
+        MODE.src = ROOTHREF + "images/DARK.png";
         theme = "light";
     }
     else {
-        MODE.src = "../images/LIGHT.png";
+        MODE.src = ROOTHREF + "images/LIGHT.png";
     }   
   localStorage.setItem("theme", theme);
 });
