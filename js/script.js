@@ -84,7 +84,7 @@ function newResetWord(index) {
 //AJAX TO GET THE MOST RECENT TITLE FROM REVIEWS
 let xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 let title = "";
-xhr.open('get', '../html/reviews.html', true);
+xhr.open('get', 'html/reviews.html', true);
 xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) { 
         //get all the text from "reviews.html"
