@@ -1,3 +1,4 @@
+//updating the home page stuff
 document.addEventListener("DOMContentLoaded", () => {
     fetchTotalHours();
 });
@@ -16,8 +17,13 @@ async function fetchTotalHours() {
     }
 }
 
+//get the first div from reviews.html
+//get the name from the title inside the first div
+//update the last line on the index file with the name
+
+
 //DARK MODE LOCAL STORAGE STUFF
-const currentTheme = localStorage.getItem("theme")
+const currentTheme = localStorage.getItem("theme");
 const MODE = document.querySelector(".modePhoto");
 const ROOTHREF = "https://aredmondd.github.io/pursuitofthebacklog/";
 
@@ -39,7 +45,3 @@ MODE.addEventListener("click", function () {
     }   
   localStorage.setItem("theme", theme);
 });
-
-function submit() {
-    alert("Thank you for your submission!");
-}
