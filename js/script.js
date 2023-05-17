@@ -17,11 +17,6 @@ async function fetchTotalHours() {
     }
 }
 
-//get the first div from reviews.html
-//get the name from the title inside the first div
-//update the last line on the index file with the name
-
-
 //DARK MODE LOCAL STORAGE STUFF
 const currentTheme = localStorage.getItem("theme");
 const MODE = document.querySelector(".modePhoto");
@@ -45,3 +40,41 @@ MODE.addEventListener("click", function () {
     }   
   localStorage.setItem("theme", theme);
 });
+
+
+//index hover animation
+let interval;
+let resetWordIndex = 0;
+let resetWord = newResetWord(resetWordIndex);
+
+const element = document.querySelector("#things");
+
+function randomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+function randomFromArray(array) {
+    return array[randomInt(array.length)];
+}
+function scrambleText(text) {
+    const chars = '*?><[]&@#)(.%$-_:/;?!AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890'.split('');
+    return text.split('').map(x => randomInt(75) > 1 ? randomFromArray(chars) : x).join('');
+}
+
+element.addEventListener('mouseover', () => {
+    interval = setInterval(() => element.innerText = scrambleText(resetWord), 75);
+})
+
+element.addEventListener('mouseout', () => {
+    clearInterval(interval);
+    element.innerText = resetWord;
+    resetWordIndex++;
+    resetWord = newResetWord(resetWordIndex);
+    if(resetWordIndex == 4) {
+        resetWordIndex = -1;
+    }
+})
+
+function newResetWord(index) {
+    let words = ["coding", "drawing", "running", "gaming", "reading"];
+    return words[index];
+}

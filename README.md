@@ -34,6 +34,7 @@ here's some things i struggled with over the course of this project. i learned i
 
 ### some thanks
 - amy redmond
+- [steve burtenshaw's scramble hover text inspiration](https://codepen.io/stphnnnn/pen/PmEdVw)
 - [css-tricks](https://www.css-tricks.com)
 - [w3schools](https://www.w3schools.com)
 - [stackOverflow](https://www.stackoverflow.com)
