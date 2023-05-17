@@ -7,8 +7,10 @@ this is a little project i whipped up after a fever dream about all my stuff in 
 
 ### some features i think are cool
 - dark/light mode supported with local state storage
+- animated scramble hover effect with updating text
 - suggestions box powered by [formsubmit API](https://www.formsubmit.co)
 - constantly updated anime hour count via [jikan API](https://www.jikan.moe)
+- constanly updated last game completed with fun AJAX (the worst)
 - a full record of all my codebase via git & github
 - a really great color pallete straight from [coolors.co](https://www.coolors.co)
 - a beautifully designed ui/ux from yours truly and figma
@@ -20,7 +22,7 @@ here's some things i struggled with over the course of this project. i learned i
 - actually using css grid correctly
 - translating a complicated design in figma to realistic code
 - learning about directories!
-- coding consistent css. god i hate this language.
+- coding consistent and resourceful css. god i hate this language.
 
 ---
 
@@ -39,5 +41,3 @@ here's some things i struggled with over the course of this project. i learned i
 - [w3schools](https://www.w3schools.com)
 - [stackOverflow](https://www.stackoverflow.com)
 - my 2nd monitor
-
-if you made it all the way down here thank you so much for reading my README! the next project is on the way.
