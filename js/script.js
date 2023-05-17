@@ -42,7 +42,7 @@ MODE.addEventListener("click", function () {
 });
 
 
-//index hover animation
+//INDEX HOVER ANIMATION
 let interval;
 let resetWordIndex = 0;
 let resetWord = newResetWord(resetWordIndex);
@@ -78,3 +78,25 @@ function newResetWord(index) {
     let words = ["coding", "drawing", "running", "gaming", "reading"];
     return words[index];
 }
+
+
+
+//AJAX TO GET THE MOST RECENT TITLE FROM REVIEWS
+let xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+let title = "";
+xhr.open('get', '../html/reviews.html', true);
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) { 
+        //get all the text from "reviews.html"
+        reviewsHTML = xhr.responseText;
+
+        //find the most recent title
+        let firstIndex = reviewsHTML.indexOf('<h6 class="cardHeader">');
+        let secondIndex = reviewsHTML.indexOf("</h6>");
+
+        //update the title
+        title = reviewsHTML.substring(firstIndex+23, secondIndex).toLowerCase();
+        document.querySelector("#recentGame").innerHTML = title;
+    } 
+}
+xhr.send();
