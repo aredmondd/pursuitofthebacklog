@@ -9,6 +9,10 @@ body {
     background-color: var(--bgColor);
 }
 
+h1 {
+    font-size: 25px;
+}
+
 h2 {
     font-size: 20px;
 }
