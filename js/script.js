@@ -1,9 +1,6 @@
 //updating the home page stuff
 document.addEventListener("DOMContentLoaded", () => {
     fetchTotalHours();
-    if (window.innerWidth <= 1440) {
-        document.location = "mobile-index.html";
-    }
 });
 
 let animeHours = document.querySelector("#animeHours");
