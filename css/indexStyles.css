@@ -8,13 +8,14 @@
 
 /*INTRO STUFF*/
 .center {
-    margin: 0rem 13rem;
+    margin: auto;
 }
 .container { /*BLOCK STYLING*/
     display: grid;
-    grid-template-columns: auto 300px auto 133px;
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: auto 200px auto 100px;
+    grid-auto-rows: auto;
     margin: 3rem 0 7rem 0;
+    align-items: center;
 }
 
 .container > p { /*ITEM SYLING*/
@@ -52,7 +53,6 @@
 
 .quick-stats { /*SIZE & LOCATION*/
     font-size: 25px;
-    margin: 0 13rem;
 }
 
 .quick-stats > p{ /*FIX MARGINS FOR INBETWEEN LINES*/
@@ -62,4 +62,16 @@
 .blueBold { /*MAKE BLUE TEXT LOOK BLUE & BOLD*/
     color: var(--blue);
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1302px) {
+    .container > p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1102px) {
+    .container > p {
+        font-size: 15px;
+    }
 }
